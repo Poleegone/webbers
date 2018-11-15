@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
     <title>Toby Dart</title>
 </head>
-<body class="bg-blue-lightest">
+<body class="bg-blue-lightest sm:bg-grey-dark">
     <div class="container mx-auto pt-16">
-        <h1 class="text-center text-grey-darkest">Coming soon...</h1>
-        <p class="text-center pt-8 text-grey-darkest">Follow me on Instagram <span><a class="no-underline text-blue" href="https://instagram.com/toby_dart" target="_blank">@toby_dart</a></span></p>
+        <h1 class="text-center text-grey-darkest sm:text-grey-light">Coming soon...</h1>
+        <p class="text-center pt-8 text-grey-darkest sm:text-grey-light">Follow me on Instagram <span><a class="no-underline text-blue" href="https://instagram.com/toby_dart" target="_blank">@toby_dart</a></span></p>
     </div>
+
+    <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'YOUR_CLIENT_ID'
+    });
+    feed.run();
+</script>
+      
 
 </body>
 </html>
